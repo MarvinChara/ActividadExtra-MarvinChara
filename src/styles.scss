@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+/* Nuevo estilo para recuadros unificados */
+.section-card {
+  background-color: #e4edf8; /* Fondo blanco */
+  padding: 25px 30px;
+  margin: 40px auto; /* separado de arriba y centrado */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-width: 900px; /* ancho máximo para buena lectura */
+  text-align: left; /* contenido alineado a la izquierda */
+}
+
+.section-card .section-title {
+  text-align: center;
+  color: #0d47a1; /* Azul marino */
+  margin-bottom: 20px;
+}
+
+.section-card h3 {
+  margin-top: 20px;
+  color: #1976d2; /* Azul intermedio para subtítulos */
+}
+
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1976d2; /* borde azul */
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-info p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}

@@ -1,11 +1,18 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
+
+// Importa tus componentes standalone
+import { Header } from './components/header/header';
+import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterModule, Header, Footer],
+  /*imports: [RouterOutlet,Header,Footer],*/
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrls: ['./app.scss']
+  /*styleUrl: './app.scss'*/
 })
 export class App {
   protected readonly title = signal('MarvinChara-portafolio');
